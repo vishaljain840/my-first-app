@@ -79,7 +79,7 @@ export default class ProductByID extends Component {
 
     //send get request
     var response = await fetch(
-      `https://my-first-app-vishal.herokuapp.com//products/${id}`,
+      `https://my-first-app-vishal.herokuapp.com/api/products/${id}`,
       {
         method: "GET",
       }
