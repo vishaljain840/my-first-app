@@ -42,9 +42,12 @@ export default class ShoppingCart extends Component {
     //fetch data from data source
     // console.log("componentDidMount - ShoppingCart");
     // console.log();
-    var response = await fetch("http://localhost:5000/products", {
-      method: "GET",
-    });
+    var response = await fetch(
+      "https://my-first-app-vishal.herokuapp.com/api/products",
+      {
+        method: "GET",
+      }
+    );
     var prods = await response.json();
     console.log(prods);
 

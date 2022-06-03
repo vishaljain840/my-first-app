@@ -56,7 +56,7 @@ export default class Login extends React.Component {
     console.log(this.state);
 
     var response = await fetch(
-      `http://localhost:5000/users?email=${this.state.email}&password=${this.state.password}`,
+      `https://my-first-app-vishal.herokuapp.com/users?email=${this.state.email}&password=${this.state.password}`,
       { method: "GET" }
     );
 

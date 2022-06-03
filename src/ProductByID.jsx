@@ -78,9 +78,12 @@ export default class ProductByID extends Component {
     var id = this.props.match.params.id;
 
     //send get request
-    var response = await fetch(`http://localhost:5000/products/${id}`, {
-      method: "GET",
-    });
+    var response = await fetch(
+      `https://my-first-app-vishal.herokuapp.com//products/${id}`,
+      {
+        method: "GET",
+      }
+    );
 
     //get response body
     var body = await response.json();
